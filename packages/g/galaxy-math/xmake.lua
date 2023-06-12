@@ -1,4 +1,4 @@
-package("nazarautils")
+package("galaxy-math")
     set_kind("static")
     set_homepage("https://github.com/GalaxyEngine/GalaxyMath")
     set_description("Static Math Library for Galaxy Engine")
