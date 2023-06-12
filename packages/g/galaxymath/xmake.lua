@@ -20,5 +20,5 @@ package("galaxymath")
                 Vec3f vec;
                 vec.Length();
             }
-        ]]}, {configs = {languages = "c++14"}}))
+        ]]}, {configs = {languages = "c++20"}}))
     end)
