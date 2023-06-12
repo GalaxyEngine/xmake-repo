@@ -4,7 +4,7 @@ package("galaxymath")
     set_description("Static Math Library for Galaxy Engine")
     set_policy("package.strict_compatibility", true)
 
-    add_urls("https://github.com/GalaxyEngine/GalaxyMath.git
+    add_urls("https://github.com/GalaxyEngine/GalaxyMath.git")
 
     add_versions("v2", "8e6511e3d9198a07a638b74385f2cfc9f5458ff1")
     
