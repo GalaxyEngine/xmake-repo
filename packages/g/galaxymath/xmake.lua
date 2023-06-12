@@ -14,10 +14,11 @@ package("galaxymath")
         import("package.tools.xmake").install(package)
     end)
 
-    on_fetch(function (package)
-        local result = {}
-        result.links = "galaxymath"
-        result.linkdirs = package:installdir("lib")
-        result.includedirs = package:installdir("include")
-        return result
+    on_test(function (package)
+        assert(package:check_cxxsnippets({test = [[
+            void test() {
+                Vec3f vec;
+                vec.Length();
+            }
+        ]]}, {configs = {languages = "c++14"}}))
     end)
