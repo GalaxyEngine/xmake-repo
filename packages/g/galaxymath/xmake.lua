@@ -13,3 +13,11 @@ package("galaxymath")
     on_install(function (package)
         import("package.tools.xmake").install(package)
     end)
+
+    on_fetch(function (package)
+        local result = {}
+        result.links = "galaxymath"
+        result.linkdirs = package:installdir("lib")
+        result.includedirs = package:installdir("include")
+        return result
+    end)
