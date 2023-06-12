@@ -6,7 +6,7 @@ package("galaxy-math")
 
     add_urls("https://github.com/GalaxyEngine/GalaxyMath.git")
 
-    add_versions("2023.12.06", "162abc4ef226e790970c169f20cb4ffdd38993a4")
+    add_versions("2023.12.06", "9b8bb998c22038b0f76e9f47f0f743e24d40fcb0")
     
     on_install(function (package)
         import("package.tools.xmake").install(package)
