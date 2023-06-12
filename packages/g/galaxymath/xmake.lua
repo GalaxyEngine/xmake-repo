@@ -8,7 +8,7 @@ package("galaxymath")
 
     add_includedirs("include")
 
-    add_versions("06.12.2023", "65bb5d5d18b356af0a84a8aafc5023fe24b75a84")
+    add_versions("06.12.2023", "8e6511e3d9198a07a638b74385f2cfc9f5458ff1")
     
     on_install(function (package)
         import("package.tools.xmake").install(package)
