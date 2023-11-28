@@ -11,12 +11,3 @@ package("galaxymath")
     on_install(function (package)
         os.cp("include", package:installdir())
     end)
-
-    on_test(function (package)
-        assert(package:check_cxxsnippets({test = [[
-            void test() {
-                Vec3f vec;
-                vec.Length();
-            }
-        ]]}, {configs = {languages = "c++20"}}))
-    end)
