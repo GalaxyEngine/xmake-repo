@@ -9,5 +9,6 @@ package("galaxymath")
     add_versions("1.0", "c43f6328e34b2859c1cf84dcb131cf00a2c36147")
     
     on_install(function (package)
-        os.cp("include", package:installdir())
+        os.cp("*.h", package:installdir("include"))
+        os.cp("*.inl", package:installdir("include"))
     end)
