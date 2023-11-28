@@ -5,7 +5,7 @@ package("galaxymath")
 
     add_urls("https://github.com/GalaxyEngine/GalaxyMath.git")
 
-    add_versions("1.0", "c43f6328e34b2859c1cf84dcb131cf00a2c36147")
+    add_versions("1.0", "875e0a42b89a7aa32013e3b979f4275f276d92e3")
 
     add_includedirs("include", "include/galaxymath")
     
