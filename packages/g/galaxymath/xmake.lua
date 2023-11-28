@@ -1,8 +1,7 @@
 package("galaxymath")
-    set_kind("headeronly")
+    set_kind("library", {headeronly = true})
     set_homepage("https://github.com/GalaxyEngine/GalaxyMath")
     set_description("Header only Math Library for Galaxy Engine")
-    set_policy("package.strict_compatibility", true)
 
     add_urls("https://github.com/GalaxyEngine/GalaxyMath.git")
 
