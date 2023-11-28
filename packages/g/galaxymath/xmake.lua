@@ -7,8 +7,9 @@ package("galaxymath")
     add_urls("https://github.com/GalaxyEngine/GalaxyMath.git")
 
     add_versions("1.0", "c43f6328e34b2859c1cf84dcb131cf00a2c36147")
+
+    add_includedirs("include")
     
     on_install(function (package)
-        os.cp("*.h", package:installdir("include"))
-        os.cp("*.inl", package:installdir("include"))
+        os.cp("include", package:installdir())
     end)
