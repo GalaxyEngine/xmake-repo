@@ -15,7 +15,7 @@ package("nativefiledialog-extended")
 
     add_deps("cmake")
     if is_plat("windows", "mingw") then
-        add_syslinks("shell32", "ole32")
+        add_syslinks("shell32", "ole32", "uuid")
     elseif is_plat("macosx") then
         add_frameworks("AppKit", "UniformTypeIdentifiers")
     end
