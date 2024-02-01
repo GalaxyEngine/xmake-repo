@@ -1,0 +1,23 @@
+{
+    find_program = {
+        unzip = "unzip",
+        ping = "ping",
+        git = "git",
+        tar = "tar",
+        gzip = "gzip"
+    },
+    find_package_mingw_x86_64_fetch_package_xmake = {
+        ["xmake::galaxymath_99c0c7c818334ed3bebbc5c3e830ebc9_release_1.0"] = false
+    },
+    ["detect.sdks.find_vcpkgdir"] = false,
+    ["detect.sdks.find_mingw"] = {
+        mingw = {
+            cross = "x86_64-w64-mingw32-",
+            bindir = [[C:\MinGW\bin]],
+            sdkdir = "C:/MinGW"
+        }
+    },
+    find_package_mingw_x86_64_fetch_package_system = {
+        galaxymath_99c0c7c818334ed3bebbc5c3e830ebc9_release = false
+    }
+}

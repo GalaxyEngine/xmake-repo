@@ -1,0 +1,9 @@
+{
+    ["detect.sdks.find_mingw"] = {
+        mingw = {
+            bindir = [[C:\MinGW\bin]],
+            cross = "x86_64-w64-mingw32-",
+            sdkdir = "C:/MinGW"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    mingw_arch_x86_64_plat_mingw = {
+        __global = true,
+        mingw = "C:/MinGW",
+        plat = "mingw",
+        cross = "x86_64-w64-mingw32-",
+        bindir = [[C:\MinGW\bin]],
+        arch = "x86_64"
+    }
+}
