@@ -5,7 +5,7 @@ package("cpp_serializer")
 
     add_urls("https://github.com/Maisquasar/CppSerializer.git")
 
-    add_versions("1.0", "00161705035a3eda8e9a348f9f6792badeac24fe")
+    add_versions("1.0", "908038c832aff9927078a57639bf4af91d5a5429")
 
     add_includedirs("include", "include/cpp_serializer")
     
