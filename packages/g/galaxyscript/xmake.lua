@@ -22,6 +22,7 @@ package("galaxyscript")
                 add_includedirs("include")
                 add_files("src/**.cpp")
                 add_headerfiles("include/**.h")
+                add_packages("cpp_serializer")
         ]])
         import("package.tools.xmake").install(package, configs)
 
