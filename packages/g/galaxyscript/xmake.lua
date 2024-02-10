@@ -1,6 +1,7 @@
 package("galaxyscript")
     set_homepage("https://github.com/GalaxyEngine/GalaxyScript")
     set_description("")
+    add_includedirs("include", "include/galaxyscript")
 
     add_urls("git@github.com:GalaxyEngine/GalaxyScript.git")
     add_versions("v1.0", "95fa70363e61a0aaacce4a30ffa1eebebd3ecbc5")
@@ -19,6 +20,7 @@ package("galaxyscript")
             target("galaxyscript")
                 set_kind("static")
                 add_files("src/**.cpp")
+                add_
                 add_headerfiles("include/**.h")
         ]])
         import("package.tools.xmake").install(package, configs)
