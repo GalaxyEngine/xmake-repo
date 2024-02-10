@@ -4,7 +4,9 @@ package("galaxyscript")
     add_includedirs("include", "include/galaxyscript")
 
     add_urls("git@github.com:GalaxyEngine/GalaxyScript.git")
+
     add_versions("v1.0", "95fa70363e61a0aaacce4a30ffa1eebebd3ecbc5")
+    add_versions("v1.1", "248ba01943c2a21a83e8c011d13ad9ba56bda6dd")
 
     add_deps("cpp_serializer")
 
@@ -12,16 +14,22 @@ package("galaxyscript")
         local configs = {}
         io.writefile("xmake.lua", [[
             add_rules("mode.release", "mode.debug")
-            set_languages("c++20")
+            set_languages("c++17")
 
             add_repositories("galaxy-repo https://github.com/GalaxyEngine/xmake-repo")
             add_requires("cpp_serializer")
 
             target("galaxyscript")
                 set_kind("static")
+
                 add_includedirs("include")
-                add_files("src/**.cpp")
                 add_headerfiles("include/**.h")
+                add_files("src/**.cpp")
+
+                if (is_plat("linux")) then
+                    add_cxxflags("-fPIC")
+                end
+
                 add_packages("cpp_serializer")
         ]])
         import("package.tools.xmake").install(package, configs)
