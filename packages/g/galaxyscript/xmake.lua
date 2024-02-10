@@ -14,7 +14,7 @@ package("galaxyscript")
         local configs = {}
         io.writefile("xmake.lua", [[
             add_rules("mode.release", "mode.debug")
-            set_languages("c++17")
+            set_languages("c++20")
 
             add_repositories("galaxy-repo https://github.com/GalaxyEngine/xmake-repo")
             add_requires("cpp_serializer")
