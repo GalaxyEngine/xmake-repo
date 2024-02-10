@@ -19,8 +19,8 @@ package("galaxyscript")
 
             target("galaxyscript")
                 set_kind("static")
+                add_includedirs("include")
                 add_files("src/**.cpp")
-                add_
                 add_headerfiles("include/**.h")
         ]])
         import("package.tools.xmake").install(package, configs)
