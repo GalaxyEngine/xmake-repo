@@ -5,10 +5,7 @@ package("galaxyscript")
 
     add_urls("git@github.com:GalaxyEngine/GalaxyScript.git")
 
-    add_versions("v1.0", "95fa70363e61a0aaacce4a30ffa1eebebd3ecbc5")
-    add_versions("v1.1", "248ba01943c2a21a83e8c011d13ad9ba56bda6dd")
-    add_versions("v1.2", "bc358e6ccc5be8e256b42cefed920fb90bc4bd1f")
-    add_versions("v1.3", "0446b4b3e2b83666e0bfc9e7ef1ef496696828de")
+    add_versions("v1.0", "9bda2bf1b133a53574db3ec8069106bb755a33f6")
 
     add_deps("cpp_serializer")
 
