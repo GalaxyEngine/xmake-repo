@@ -7,6 +7,7 @@ package("galaxyscript")
 
     add_versions("v1.0", "95fa70363e61a0aaacce4a30ffa1eebebd3ecbc5")
     add_versions("v1.1", "248ba01943c2a21a83e8c011d13ad9ba56bda6dd")
+    add_versions("v1.2", "bc358e6ccc5be8e256b42cefed920fb90bc4bd1f")
 
     add_deps("cpp_serializer")
 
