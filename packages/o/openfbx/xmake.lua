@@ -12,5 +12,9 @@ package("openfbx")
         local configs = {}
         table.insert(configs, "-DCMAKE_BUILD_TYPE=" .. (package:is_debug() and "Debug" or "Release"))
         table.insert(configs, "-DBUILD_SHARED_LIBS=" .. (package:config("shared") and "ON" or "OFF"))
+        
+        -- Add this line to specify the toolset
+        table.insert(configs, "-T host=x64 -A x64")
+
         import("package.tools.cmake").install(package, configs)
     end)
