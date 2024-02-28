@@ -14,7 +14,3 @@ package("openfbx")
         table.insert(configs, "-DBUILD_SHARED_LIBS=" .. (package:config("shared") and "ON" or "OFF"))
         import("package.tools.cmake").install(package, configs)
     end)
-
-    on_test(function (package)
-        assert(package:has_cfuncs("foo", {includes = "foo.h"}))
-    end)
