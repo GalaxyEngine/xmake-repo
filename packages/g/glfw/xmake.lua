@@ -7,14 +7,7 @@ package("glfw")
 
     add_urls("https://github.com/glfw/glfw/archive/refs/tags/$(version).tar.gz",
              "https://github.com/glfw/glfw.git")
-    add_versions("3.3.2", "98768e12e615fbe9f3386f5bbfeb91b5a3b45a8c4c77159cef06b1f6ff749537")
-    add_versions("3.3.4", "cc8ac1d024a0de5fd6f68c4133af77e1918261396319c24fd697775a6bc93b63")
-    add_versions("3.3.5", "32fdb8705784adfe3082f97e0d41e7c515963e977b5a14c467a887cf0da827b5")
-    add_versions("3.3.6", "ed07b90e334dcd39903e6288d90fa1ae0cf2d2119fec516cf743a0a404527c02")
-    add_versions("3.3.7", "fd21a5f65bcc0fc3c76e0f8865776e852de09ef6fbc3620e09ce96d2b2807e04")
-    add_versions("3.3.8", "f30f42e05f11e5fc62483e513b0488d5bceeab7d9c5da0ffe2252ad81816c713")
-    add_versions("3.3.9", "a7e7faef424fcb5f83d8faecf9d697a338da7f7a906fc1afbc0e1879ef31bd53")
-    add_versions("3.4", "c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01")
+    add_versions("3.4-galaxy", "c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01")
 
     add_configs("glfw_include", {description = "Choose submodules enabled in glfw", default = "none", type = "string", values = {"none", "vulkan", "glu", "glext", "es2", "es3"}})
 
