@@ -5,8 +5,7 @@ package("glfw")
     set_license("zlib")
     add_includedirs("include", "include/GLFW")
 
-    add_urls("https://github.com/glfw/glfw/archive/refs/tags/$(version).tar.gz",
-             "https://github.com/glfw/glfw.git")
+    add_urls("https://github.com/glfw/glfw.git")
     add_versions("3.4-galaxy", "c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01")
 
     add_configs("glfw_include", {description = "Choose submodules enabled in glfw", default = "none", type = "string", values = {"none", "vulkan", "glu", "glext", "es2", "es3"}})
