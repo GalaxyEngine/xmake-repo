@@ -1,4 +1,4 @@
-package("rttr")
+package("rttr2")
     set_homepage("https://github.com/rttrorg/rttr")
     set_description("C++ Reflection Library")
     add_includedirs("include")
