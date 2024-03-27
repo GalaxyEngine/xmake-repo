@@ -1,4 +1,4 @@
-package("rttr2")
+package("rttr")
     set_homepage("https://github.com/rttrorg/rttr")
     set_description("C++ Reflection Library")
     add_includedirs("include")
@@ -8,18 +8,26 @@ package("rttr2")
     add_versions("0.9.6", "v0.9.6")
     add_versions("0.9.5", "v0.9.5")
 
+     on_load(function (package)
+        -- Assume we want to rename "old_filename.txt" to "new_filename.txt" inside the cloned directory
+        local old_filename = path.join(package:sourcepath(), "src/rttr/detail/base/version.h.in")
+        local new_filename = path.join(package:sourcepath(), "src/rttr/detail/base/version.h")
+        if os.isfile(old_filename) then
+            os.rename(old_filename, new_filename)
+        end
+    end)
+
     on_install(function (package)
         local configs = {}
         io.writefile("xmake.lua", [[
             add_rules("mode.debug", "mode.release")
-            add_rules("plugin.vsxmake.autoupdate")
 
             -- Runtime mode
             if is_plat("windows") then
                 set_runtimes(is_mode("debug") and "MDd" or "MD")
             end
 
-            target("ReflectionTest")
+            target("rttr2")
                 set_kind("static")
 
                 add_includedirs("src")
