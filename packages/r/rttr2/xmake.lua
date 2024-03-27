@@ -9,9 +9,8 @@ package("rttr2")
     add_versions("0.9.5", "v0.9.5")
 
      on_load(function (package)
-        -- Assume we want to rename "old_filename.txt" to "new_filename.txt" inside the cloned directory
-        local old_filename = path.join(package:sourcepath(), "src/rttr/detail/base/version.h.in")
-        local new_filename = path.join(package:sourcepath(), "src/rttr/detail/base/version.h")
+        local old_filename = "src/rttr/detail/base/version.h.in"
+        local new_filename = "src/rttr/detail/base/version.h"
         if os.isfile(old_filename) then
             os.rename(old_filename, new_filename)
         end
