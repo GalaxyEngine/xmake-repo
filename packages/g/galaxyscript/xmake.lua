@@ -3,7 +3,7 @@ package("galaxyscript")
     set_description("")
     add_includedirs("include", "include/galaxyscript")
 
-    add_urls("git@github.com:GalaxyEngine/GalaxyScript.git")
+    add_urls("https://github.com/GalaxyEngine/GalaxyScript.git")
 
     add_versions("v1.1-galaxyengine", "efbd57d62679ee9df1369b3d4b8c34a309b3d74f")
     add_versions("v1.0-galaxyengine", "v1.0-galaxyengine")
