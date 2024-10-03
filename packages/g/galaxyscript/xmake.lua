@@ -5,7 +5,7 @@ package("galaxyscript")
 
     add_urls("git@github.com:GalaxyEngine/GalaxyScript.git")
 
-    add_versions("v1.1-galaxyengine", "v1.1-galaxyengine")
+    add_versions("v1.1-galaxyengine", "efbd57d62679ee9df1369b3d4b8c34a309b3d74f")
     add_versions("v1.0-galaxyengine", "v1.0-galaxyengine")
     add_versions("v1.0", "9bda2bf1b133a53574db3ec8069106bb755a33f6")
 
