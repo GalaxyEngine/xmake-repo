@@ -4,7 +4,7 @@ package("openfbx")
     set_license("MIT")
     add_includedirs("include", "include/openfbx")
 
-    add_urls("git@github.com:nem0/OpenFBX.git")
+    add_urls("https://github.com/nem0/OpenFBX.git")
     add_versions("2024.02.16", "eefc3df905f762226df980ca95a6c4bac1d0c1ae")
 
     on_install(function (package)
