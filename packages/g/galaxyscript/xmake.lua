@@ -1,8 +1,9 @@
 package("galaxyscript")
     set_homepage("https://github.com/GalaxyEngine/GalaxyScript")
-    set_description("")
+    set_description("Scripting library designed for C++ development")
     add_includedirs("include", "include/galaxyscript")
 
+    add_urls("https://github.com/GalaxyEngine/GalaxyScript/archive/refs/tags/$(version).zip")
     add_urls("https://github.com/GalaxyEngine/GalaxyScript.git")
 
     add_versions("git:v1.1-galaxyengine", "v1.1-galaxyengine")
