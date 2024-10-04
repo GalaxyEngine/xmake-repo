@@ -1,13 +1,11 @@
 package("galaxyscript")
-    set_homepage("https://github.com/GalaxyEngine/GalaxyScript")
+    set_homepage("https://github.com/Maisquasar/GalaxyScript2")
     set_description("Scripting library designed for C++ development")
     add_includedirs("include", "include/galaxyscript")
 
-    add_urls("https://github.com/GalaxyEngine/GalaxyScript/archive/refs/tags/$(version).zip")
-    add_urls("https://github.com/GalaxyEngine/GalaxyScript.git")
+    add_urls("https://github.com/Maisquasar/GalaxyScript2/archive/refs/tags/$(version).zip")
+    add_urls("https://github.com/Maisquasar/GalaxyScript2.git")
 
-    add_versions("git:v1.1-galaxyengine", "v1.1-galaxyengine")
-    add_versions("git:v1.0-galaxyengine", "v1.0-galaxyengine")
     add_versions("v1.0", "9bda2bf1b133a53574db3ec8069106bb755a33f6")
 
     add_deps("cpp_serializer")
