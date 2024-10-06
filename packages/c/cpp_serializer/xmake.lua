@@ -10,6 +10,7 @@ package("cpp_serializer")
     add_versions("1.2", "905028d80bb7374bbff05ca3c99c9cc2e6c0702f")
     add_versions("1.3", "c8c154428cd60fe55e368c9c07ee73604ce6cdee")
     add_versions("1.3.1", "4044d5bd6eaec18e722e8af1a42a678fcedaaaa1")
+    add_versions("1.4", "0987e0bd48637797ea600a465ccca256a2e3d8ee")
 
     add_includedirs("include", "include/cpp_serializer")
     
