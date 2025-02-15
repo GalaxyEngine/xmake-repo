@@ -8,8 +8,6 @@ package("galaxyheadertool")
     add_versions("1.0", "6e5301ef150d4c929b082ac9f61693acc380192a")
     add_versions("1.0-galaxyengine", "0ae2441b96ea24df16353340c2bfce447885fb7c")
 
-    add_versions("git:1.0-galaxyengine", "v1.0-galaxyengine")
-
     add_configs("destdir", { 
         description = "The destination directory where the binary will be copied. If not set, the binary is copied to the project root.",
         default = "", -- this default is used only if the config is not nil
