@@ -16,7 +16,7 @@ package("galaxyheadertool")
         type = "string"
     })
 
-    on_install("windows", "linux", "mingw", function (package)
+    on_install(function (package)
         import("package.tools.xmake").install(package)
 
         local binfile_exe = path.join(package:installdir("bin"), "GalaxyHeaderTool.exe")
