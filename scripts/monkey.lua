@@ -3,7 +3,7 @@ import("core.base.option")
 import("core.platform.platform")
 import("packages", {alias = "get_packages"})
 
--- the options
+-- the options 
 local options =
 {
     {'v', "verbose",    "k",  nil, "Enable verbose information."                }
